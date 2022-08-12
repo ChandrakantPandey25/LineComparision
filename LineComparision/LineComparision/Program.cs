@@ -9,6 +9,7 @@ namespace LineComparision
             Console.WriteLine("Welcome to Line Comparision");
             Console.WriteLine("Enter 1 for Line Length");
             Console.WriteLine("Enter 2 for Line Length comparision of two lines");
+            Console.WriteLine("Enter 3 for Line  comparision of two lines");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -20,6 +21,10 @@ namespace LineComparision
                 case 2:
                     CompareTwoLine compare = new CompareTwoLine();
                     double result = compare.LengthComparision();
+                    break;
+                case 3:
+                    LineComparision compareLine = new LineComparision();
+                    double output = compareLine.LineCompare();
                     break;
                 default:
                     Console.WriteLine("Enter valid number");
